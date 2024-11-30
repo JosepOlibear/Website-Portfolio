@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/My LOGO.png" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h1 {
+      font-size: 2.5rem;
+      color: #4A4A4A;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Card Styling */
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: #6A5ACD;
+      border-color: #6A5ACD;
+    }
+
+    .btn-primary:hover {
+      background-color: #9370DB;
+      border-color: #9370DB;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #D6CADD; /* Lavender */
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="main-header">
+    <img src="images/My LOGO.png" class="logo" alt="Logo">
+    <button class="burger-menu" aria-label="Toggle Navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Section Title -->
+  <section class="section bg-light">
+    <div class="container">
+      <h1>Here are my recent works:</h1>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-center h-100">
+          <img src="images/calculator.png" class="card-img-top img-fluid" alt="Calculator Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 1 "Basic Calculator"</h5>
+            <p class="card-text">
+              This is one of my projects: a simple calculator built using HTML and CSS. It performs basic arithmetic operations.
+            </p>
+            <a href="https://github.com/JosepOlibear/Basic-Calculator" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-center h-100">
+          <img src="images/informative web.png" class="card-img-top img-fluid" alt="Informative Website Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 2 "Informative Website"</h5>
+            <p class="card-text">
+              I created this website using Bootstrap to learn about responsive design and modern web development techniques.
+            </p>
+            <a href="https://github.com/JosepOlibear/Marathon-2" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card text-center h-100">
+          <img src="images/TrekTribe.png" class="card-img-top img-fluid" alt="TrekTribe Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 3 "TrekTribe"</h5>
+            <p class="card-text">
+              TrekTribe is a collaborative effort to create a web app for cyclists and runners, enabling them to discover routes.
+            </p>
+            <a href="https://trektribe.wuaze.com" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Joseph Oliver Mangabang. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Burger Menu JavaScript -->
+  <script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
